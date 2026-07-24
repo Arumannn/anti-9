@@ -1,0 +1,24 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@anthropic/mcp-filesystem"
+            ],
+            "env": {
+                "MCP_FILESYSTEM_ROOT": "/"
+            }
+        },
+        "shell": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@anthropic/mcp-shell"
+            ],
+            "env": {
+                "MCP_SHELL_ALLOWED": "curl,whoami,id,uname"
+            }
+        }
+    }
+}
